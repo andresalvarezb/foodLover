@@ -44,7 +44,8 @@ header {
 
 .home__container,
 .about__container,
-.galery__container {
+.galery__container,
+.enjoy__container {
     display: flex;
     flex-direction: column;
     max-width: 1500px;
@@ -107,7 +108,8 @@ header {
 
 .home__text,
 .about__text,
-.quality__text {
+.quality__text,
+.enjoy__text {
     color: var(--color-font);
     margin-bottom: 1.2rem;
     font-size: 2rem;
@@ -200,7 +202,8 @@ header {
     align-items: center;
 }
 
-.galery__title {
+.galery__title,
+.enjoy__title {
     color: var(--color-font);
     text-transform: capitalize;
     font-size: 3rem;
@@ -224,4 +227,24 @@ header {
     object-fit: cover;
     object-position: center;
     width: 100%;
+}
+
+/* ENJOY */
+
+.enjoy {
+    height: 100vh;
+    padding-block: 2rem;
+    background-color: var(--color-secundary);
+}
+
+.enjoy > div {
+    height: 100%;
+    background: url("/storage/img/placeYourImageHereOur0.png") center / cover no-repeat;
+}
+.enjoy__content {
+    padding: 2rem;
+    border: 8px solid var(--color-primary);
+    background-color: rgba(0, 0, 0, 0.808);
+    max-width: 500px;
+    text-align: center;
 }
