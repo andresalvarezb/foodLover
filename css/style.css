@@ -1,1 +1,117 @@
-@import url(style.css);
+@import url("normalize.css");
+@import url("variables.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Roboto Slab", serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* helpers */
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HOME */
+
+header{
+    height: 100vh;
+    background: #000000cf url("/storage/img/placeYourImageHere0.png") center / cover no-repeat;
+    background-blend-mode: darken;
+}
+
+.home {
+    height: 100%;
+    align-items: initial;
+}
+
+.home__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1500px;
+    padding-top: 2rem;
+}
+.nav {
+    justify-content: space-between;
+    padding-inline: 2rem;
+}
+
+.nav__list {
+    gap: 2rem;
+}
+
+.nav__item a {
+    color: var(--color-font);
+    font-weight: var(--font-weight-1);
+}
+
+.nav__item a:hover {
+    color: var(--color-primary);
+}
+
+
+.home__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    place-items: center;
+    flex: 1;
+    justify-items: stretch;
+}
+
+.home__img {
+    width: 100%;
+}
+
+.home__img img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.home__conyainer-text {
+    width: 90%;
+}
+
+.home__title {
+    color: var(--color-primary);
+    text-transform: capitalize;
+    font-size: 4rem;
+    font-weight: var(--font-weight-3);
+}
+
+.home__text {
+    color:var(--color-font);
+    margin-bottom: 1.2rem;
+    font-size: 2rem;
+}
+
+.home__button {
+    background-color: var(--color-primary);
+    border: none;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.home__button:hover {
+    opacity: 0.8;
+}

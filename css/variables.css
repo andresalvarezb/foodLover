@@ -3,6 +3,12 @@
     --color-secundary: #17171e;
     --color-ternario: #323239;
     --color-font: #fff;
+    
+    --font-weight-1: 400;
+    --font-weight-2: 600;
+    --font-weight-3: 800;
+    --border-radius: 0.25#rem;
+
 }
 
 /* Fuente Click Aqui : https://fonts.google.com/specimen/Roboto+Slab?preview.text=Contact%20Us%20For&query=%5BAachen */
