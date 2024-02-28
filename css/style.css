@@ -43,7 +43,8 @@ header {
 }
 
 .home__container,
-.about__container {
+.about__container,
+.galery__container {
     display: flex;
     flex-direction: column;
     max-width: 1500px;
@@ -189,37 +190,38 @@ header {
     color: var(--color-font);
 }
 
-/* .quality {
-    height: 100vh;
-    background: var(--color-secundary) url("/storage/img/placeYourImageHereFood.png") center / cover no-repeat;
+/* GALERY */
+
+.galery {
+    background-color: var(--color-secundary);
 }
 
-.quality__container {
+.galery__container {
+    align-items: center;
+}
+
+.galery__title {
+    color: var(--color-font);
+    text-transform: capitalize;
+    font-size: 3rem;
+    margin-block: 2rem;
+}
+
+.galery__imgs {
     display: grid;
-    grid-template: repeat(10, 1fr) / repeat(10, 1fr);
-    height: 100%;
-}
-
-.quality__content {
-    grid-row: 2 / 3;
-}
-
-.quality__img--0 {
-    grid-column: 8 / span 3;
-    grid-row: 1 / span 5;
-}
-
-.quality__img--1 {
-    grid-column: 5 / span 5;
-    grid-row: 5 / span 5;
-}
-
-.quality__img--3 {
-    grid-row: 5 / 10;
-}
-
-.quality__img--0 img,
-.quality__img--1 img,
-.quality__img--3 img {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
     width: 100%;
-} */
+    justify-items: center;
+}
+
+.galery__img {
+    width: 100%;
+}
+
+.galery__img img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
