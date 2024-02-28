@@ -31,7 +31,7 @@ a {
 
 /* HOME */
 
-header{
+header {
     height: 100vh;
     background: #000000cf url("/storage/img/placeYourImageHere0.png") center / cover no-repeat;
     background-blend-mode: darken;
@@ -42,12 +42,14 @@ header{
     align-items: initial;
 }
 
-.home__container {
+.home__container,
+.about__container {
     display: flex;
     flex-direction: column;
     max-width: 1500px;
     padding-top: 2rem;
 }
+
 .nav {
     justify-content: space-between;
     padding-inline: 2rem;
@@ -67,7 +69,8 @@ header{
 }
 
 
-.home__content {
+.home__content,
+.about__container>div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
@@ -76,11 +79,13 @@ header{
     justify-items: stretch;
 }
 
-.home__img {
+.home__img,
+.about__img {
     width: 100%;
 }
 
-.home__img img {
+.home__img img,
+.about__img img {
     width: 100%;
     object-fit: cover;
     object-position: center;
@@ -90,15 +95,17 @@ header{
     width: 90%;
 }
 
-.home__title {
+.home__title,
+.about__title {
     color: var(--color-primary);
     text-transform: capitalize;
     font-size: 4rem;
     font-weight: var(--font-weight-3);
 }
 
-.home__text {
-    color:var(--color-font);
+.home__text,
+.about__text {
+    color: var(--color-font);
     margin-bottom: 1.2rem;
     font-size: 2rem;
 }
@@ -114,4 +121,11 @@ header{
 
 .home__button:hover {
     opacity: 0.8;
+}
+
+/* About us  */
+
+.about {
+    background-color: var(--color-secundary);
+    height: 100vh;
 }
