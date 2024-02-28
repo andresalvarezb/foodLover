@@ -43,7 +43,8 @@ header {
 }
 
 .home__container,
-.about__container {
+.about__container,
+.quality__bg-img {
     display: flex;
     flex-direction: column;
     max-width: 1500px;
@@ -129,3 +130,51 @@ header {
     background-color: var(--color-secundary);
     height: 100vh;
 }
+
+/* quality */
+
+.quality{
+    background-color: var(--color-secundary);
+}
+
+.quality__bg-img {
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+.quality__bg-img > img{
+    width: 100%;
+    /* background: url("/storage/img/placeYourImageHereFood.png") center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; */
+}
+
+.quality__img--3 {
+    position: absolute;
+    bottom: 10%;
+    max-width: 35%;
+}
+
+/* .quality__img--3 img {
+    width: 70%;
+} */
+
+.quality__img--1 {
+    position: absolute;
+    bottom: 7%;
+    right: 0;
+    width: 50%;
+    max-width: 35%;
+}
+
+.quality__img--0 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 35%;
+}
+
+/* .quality__img--0 img {
+    width: 100%;
+} */
