@@ -37,6 +37,10 @@ header {
     background-blend-mode: darken;
 }
 
+main {
+    background-color: var(--color-secundary);
+}
+
 .home {
     height: 100%;
     align-items: initial;
@@ -110,7 +114,8 @@ header {
 .home__text,
 .about__text,
 .quality__text,
-.enjoy__text {
+.enjoy__text,
+.bestMeal__text {
     color: var(--color-font);
     margin-bottom: 1.2rem;
     font-size: 2rem;
@@ -205,7 +210,8 @@ header {
 
 .galery__title,
 .enjoy__title,
-.menu__title {
+.menu__title,
+.bestMeal__title {
     color: var(--color-font);
     text-transform: capitalize;
     font-size: 3rem;
@@ -291,4 +297,29 @@ header {
 
 .card__price {
     color: var(--color-primary);
+}
+
+/* BEST MEAL */
+
+.bestMeal {
+    background-color: var(--color-secundary);
+    margin-top: 12rem;
+}
+
+.bestMeal__container {
+    height: 60vh;
+    background-color: var(--color-primary);
+    gap: 2rem;
+}
+
+.bestMeal__img {
+    flex: 1;
+}
+
+.bestMeal__img img {
+    width: 100%;
+}
+.bestMeal__content {
+    flex: 1.2;
+    width: 80%;
 }
