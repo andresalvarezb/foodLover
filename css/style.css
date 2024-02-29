@@ -295,12 +295,13 @@ main {
 .menu__title {
     text-align: center;
 }
+
 .menu__cards {
     justify-content: space-between;
     gap: 1rem;
 }
 
-.card__img img{
+.card__img img {
     width: 100%;
     object-fit: cover;
     object-position: center;
@@ -346,6 +347,7 @@ main {
 .bestMeal__img img {
     width: 100%;
 }
+
 .bestMeal__content {
     flex: 1.2;
     width: 80%;
@@ -367,7 +369,7 @@ main {
 }
 
 .footer__list {
-    gap:2rem;
+    gap: 2rem;
     margin-block-end: 2rem;
 }
 
@@ -380,7 +382,7 @@ main {
 }
 
 .footer__media {
-    gap:2rem;
+    gap: 2rem;
     padding-block-end: 6rem;
 }
 
@@ -394,4 +396,93 @@ main {
 .footer__media .bx:hover {
     background-color: var(--color-primary);
     cursor: pointer;
+}
+
+@media (width <=965px) {
+
+    .home__content{
+        gap: 2rem;
+    }
+
+    .home__title,
+    .about__title,
+    .quality__title {
+        font-size: 3rem;
+    }
+
+    .home__button {
+        padding: 0.7rem;
+        font-size: 1.2rem;
+    }
+
+    .home__text,
+    .about__text,
+    .quality__text,
+    .enjoy__text,
+    .bestMeal__text {
+        font-size: 1.2rem;
+    }
+
+    .galery__title,
+    .enjoy__title,
+    .menu__title,
+    .bestMeal__title {
+        font-size: 2rem;
+    }
+
+    .card__title {
+        font-size: 1.5rem;
+    }
+
+    .quality__content {
+        max-width: 400px;
+    }
+}
+
+@media (width <= 730px) {
+    .home__content{
+        grid-template-columns: 1fr;
+        /* grid-auto-rows: auto; */
+        gap: 1rem;
+        place-items: center;
+    }
+
+    .home__img {
+        display: none;
+    }
+    .home__container-text {
+        max-width: 400px;
+    }
+
+    .about__title,
+    .quality__title {
+        font-size: 2rem;
+    }
+
+
+    .about__text,
+    .quality__text,
+    .enjoy__text,
+    .bestMeal__text {
+        font-size: 0.8rem;
+    }
+
+    .galery__title,
+    .enjoy__title,
+    .menu__title,
+    .bestMeal__title {
+        font-size: 1.5rem;
+    }
+
+    .card__title {
+        font-size: 1rem;
+    }
+
+    .quality__content {
+        max-width: 200px;
+    }
+
+    .footer__list {
+        flex-wrap: wrap;
+    }
 }
