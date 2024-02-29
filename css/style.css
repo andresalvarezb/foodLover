@@ -323,3 +323,48 @@ main {
     flex: 1.2;
     width: 80%;
 }
+
+/* FOOTER */
+
+.footer {
+    background-color: var(--color-ternario);
+}
+
+.footer__container {
+    margin-top: 6rem;
+}
+
+.footer__img {
+    text-align: center;
+    margin-block: 2rem;
+}
+
+.footer__list {
+    gap:2rem;
+    margin-block-end: 2rem;
+}
+
+.footer__item a {
+    color: var(--color-font);
+}
+
+.footer__item a:hover {
+    color: var(--color-primary);
+}
+
+.footer__media {
+    gap:2rem;
+    padding-block-end: 6rem;
+}
+
+.footer__media .bx {
+    background-color: var(--color-font);
+    border-radius: 50%;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.footer__media .bx:hover {
+    background-color: var(--color-primary);
+    cursor: pointer;
+}
